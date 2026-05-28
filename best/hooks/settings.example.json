@@ -1,0 +1,21 @@
+{
+  "_comment": "Пример блоков hooks для .claude/settings.json. Копируй нужное в свой settings.json.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          { "type": "command", "command": "echo 'Session started'" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "echo \"edited: $CLAUDE_FILE\"" }
+        ]
+      }
+    ]
+  }
+}

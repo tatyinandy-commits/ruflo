@@ -1,0 +1,21 @@
+{
+  "name": "best",
+  "description": "Личная коллекция самых полезных инструментов и скиллов для работы",
+  "version": "0.1.0",
+  "updated": "2026-05-28",
+  "categories": {
+    "skills": [],
+    "agents": [],
+    "commands": [],
+    "hooks": [],
+    "mcp": [],
+    "prompts": [],
+    "scripts": [
+      {
+        "name": "new-item",
+        "path": "scripts/new-item.sh",
+        "description": "Скаффолдит новый элемент коллекции (skill/agent/command/prompt) из шаблона"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_comment": "Пример конфигурации MCP-серверов. Ключи только через ${ENV_VAR}, не хардкодить.",
+  "mcpServers": {
+    "claude-flow": {
+      "command": "npx",
+      "args": ["claude-flow@v3alpha", "mcp", "start"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": { "API_KEY": "${CONTEXT7_API_KEY}" }
+    }
+  }
+}
